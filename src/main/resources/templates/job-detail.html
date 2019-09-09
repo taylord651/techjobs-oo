@@ -9,6 +9,28 @@
 <div class="container body-content">
 
     <!-- // TODO #2 - display the job fields, one per row -->
+        <table  th:fragment="single-job" class="job-listing">
+            <tr>
+                <th>Name</th>
+                <td th:text="${someJob.name}"></td>
+            </tr>
+            <tr>
+                <th>Employer</th>
+                <td th:text="${someJob.employer}"></td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td th:text="${someJob.location}"></td>
+            </tr>
+            <tr>
+                <th>Position Type</th>
+                <td th:text="${someJob.positionType}"></td>
+            </tr>
+            <tr>
+                <th>Skill</th>
+                <td th:text="${someJob.coreCompetency}"></td>
+            </tr>
+        </table>
 
 </div>
 
